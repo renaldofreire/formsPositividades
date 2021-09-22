@@ -2,6 +2,9 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed" rel="stylesheet" type="text/css">
   <title>Formulário da Positividade</title>
 </head>
 <body>
@@ -34,11 +37,95 @@
             <input type="number" id="number" class="input-fields" placeholder="Insira um número de 1 a 10" min="1" max"10">
           </div>
         </div>
-
-        </div>
-            </label>
+          <div class="forms-rows">
+            <div class="labels">
+            <label for="dropdown" id="dropdown-label">Onde isso aconteceu?</label>
+          </div>
+          <div class="fields">
+            <select name="Local do ocorrido positivo" id="dropdown" class="dropdown">
+              <option value="casa">Em casa</option>
+              <option value="transito">No trânsito</option>
+              <option value="trabalho">No trabalho</option>
+              <option value="rua">Na rua</option>
+              <option value="outra">Outro local</option>
+            </select>
           </div>
         </div>
+        <div class="form-rows">
+          <div class="labels">
+            <label for="time-of-day">Em que momento do dia isso aconteceu?</label>
+          </div>
+          <div class="fields">
+            <ul id="time-of-day" style="list-style: none;">
+              <li class="radio">
+                <label>
+                  Manhã
+                  <input name="time-radio" type="radio" value="1" class="user-selection">
+                </label>
+                <li class="radio">
+                <label>
+                  Tarde
+                  <input name="time-radio" type="radio" value="2" class="user-selection">
+                </label>
+              </li>
+                <li class="radio">
+                <label>
+                  Noite
+                  <input name="time-radio" type="radio" value="3" class="user-selection">
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="forms-rows">
+          <div class="labels">
+            <label for="feelings">
+              Que emoções você sentiu?
+              <br>
+              (Selecione todas que se aplicam)
+            </label>
+          </div>
+          <div class="fields">
+            <ul id="feelings" style="list-style: none;">
+              <li class="radio">
+                <input name="feeling-check" value="1" type="checkbox" class="user-selection">
+                Empolgação
+                </label>
+              </li>
+              <li class="radio">
+                <input name="feeling-check" value="2" type="checkbox" class="user-selection">
+                Humildade 
+                </label>
+              </li>
+              <li class="radio">
+                <input name="feeling-check" value="3" type="checkbox" class="user-selection">
+                Alegria 
+                </label>
+              </li>
+              <li class="radio">
+                <input name="feeling-check" value="4" type="checkbox" class="user-selection">
+                Amor
+                </label>
+              </li>
+              <li class="radio">
+                <input name="feeling-check" value="5" type="checkbox" class="user-selection">
+                Risadas
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="forms-rows">
+          <div class="labels">
+            <label for="event-details">
+              Por favor, descreva aqui sua experiência positiva.
+            </label>
+          </div>
+          <div class="fields">
+            <textarea id="event-details" class="input-fields" style="height: 50px;resize:vertical;font-family: Open Sans Condensed;" name="event-details" cols="1" rows="1" placeholder="Insira sua experiência aqui..."></textarea>
+          </div>
+        </div>
+        <button class="button" id="submit" type="submit">Enviar</button>
       </form>
     </div>
   </main>
