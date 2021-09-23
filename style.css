@@ -21,4 +21,109 @@ p {
   margin: auto;
   width: 800px;
   background-color: #90e0ef;
+  border-radius: 20px;
+  padding: 20px 10px 10px 10px;
+}
+
+.fields {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 8px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.input-fields {
+  height: 20px;
+  width: 290px;
+  padding: 8px;
+  margin: 10px;
+  border: 1px solid #1d3557;
+  border-radius: 6px;
+}
+
+.dropdown {
+  height: 35px;
+  width: 140px;
+  padding: 8px;
+  margin: 15px 10px 10px 10px;
+  border: 1px solid #1d3557;
+  border-radius: 6px;
+}
+
+.radio {
+  position: relative;
+  left: -30px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.user-selection {
+  float: left;
+  margin-right: 5px;
+}
+
+.button {
+  font-size: 1em;
+  background-color: #2a9d8f;
+  color: white;
+  border: 0px solid;
+  border-radius: 4px;
+  height: 40px;
+  width: 80px;
+  margin: 10px;
+}
+
+@media (max-width: 833px) {
+  .master-div-style {
+    width: 70%;
+  }
+
+  .fields {
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+    vertical-align: middle;
+  }
+
+  .input-fields {
+    width: 80%;
+  }
+
+  .dropdown {
+    width: 90%;
+  }
+}
+
+@media (max-width: 520px) {
+  .master-div-style {
+    width: 80%;
+  }
+
+  .fields {
+    width: 80%;
+    float: left;
+  }
+
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+
+  .input-fields {
+    width: 100%;
+  }
+
+  .dropdown {
+    width: 100%;
+  }
 }
